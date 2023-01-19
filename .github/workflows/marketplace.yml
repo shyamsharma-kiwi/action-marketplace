@@ -1,0 +1,14 @@
+name: Pyton Application
+
+on: [push]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: check out the code
+      users: actions/checkout@2
+    - name: Python Syntax Checker
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
